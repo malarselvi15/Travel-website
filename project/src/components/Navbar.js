@@ -8,8 +8,13 @@ function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Destinations", path: "/destinations" },
+
     { name: "Contact", path: "/contact" },
     { name: "Login", path: "/login" }, // ✅ Added Login
+
+    { name: "Dashboard", path: "/dashboard" },
+    { name: "Contact ", path: "/contact" },
+
   ];
 
   return (
