@@ -8,8 +8,13 @@ function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Destinations", path: "/destinations" },
+
+    { name: "Contact", path: "/contact" },
+    { name: "Login", path: "/login" }, // ✅ Added Login
+
     { name: "Dashboard", path: "/dashboard" },
     { name: "Contact ", path: "/contact" },
+
   ];
 
   return (
@@ -18,20 +23,25 @@ function Navbar() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        // padding: "20px 20px", // 🔹 reduced padding from 60px → 40px
         backgroundColor: "transparent",
         color: "#ffcc00",
         position: "fixed",
         width: "100%",
         top: 0,
         zIndex: 1000,
-        paddingRight:"70px",
-        paddingTop:"40px",
-        paddingLeft:"10px"
+        paddingRight: "70px",
+        paddingTop: "40px",
+        paddingLeft: "10px",
       }}
     >
       {/* Logo */}
-      <div style={{ fontSize: "28px", fontWeight: "bold", color: "#ffcc00" }}>
+      <div
+        style={{
+          fontSize: "28px",
+          fontWeight: "bold",
+          color: "#ffcc00",
+        }}
+      >
         TravelX
       </div>
 
@@ -45,7 +55,7 @@ function Navbar() {
           padding: 0,
           fontSize: "18px",
           fontWeight: "600",
-          paddingRight: "30px", // 🔹 move navbar links slightly left
+          paddingRight: "30px",
         }}
       >
         {links.map((link, index) => (

@@ -34,8 +34,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Destinations from "./components/Destinations";
 import LearnMore from "./components/LearnMore";
-import Contact from "./components/Contact";
-import Dashboard from "./components/Dashboard";
+import Contact from "./components/Contact"; // ✅ Contact page
 
 function App() {
   return (
@@ -46,8 +45,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/learnmore" element={<LearnMore />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/contact" element={<Contact />} /> {/* ✅ Contact */}
       </Routes>
     </>
   );
